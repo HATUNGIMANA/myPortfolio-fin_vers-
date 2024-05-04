@@ -1,0 +1,72 @@
+body{
+  background-color: aliceblue;
+  justify-content: center;
+  margin: 0;
+  padding:0;
+  font-family:Arial, sans-serif;
+  font-size: 120%;
+  text-align:center;
+}
+
+a:link{  
+  color:rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration:none;
+} 
+
+a:visited {
+  color : rgb(255, 255, 255);
+  background-color:transparent;
+  text-decoration:none;
+}
+
+a:hover{
+  color:rgb(255, 255, 0);
+  background-color: transparent;
+  text-decoration:none;
+}
+img{
+  width:100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2547df;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  text-decoration:#37CBE6;
+}
+
+li a:hover {
+  background-color: #3E4FE6;
+} 
+.mycondingprojects{
+  display:"flex";
+}
+div.mycodingprojects{
+  width:100%;
+  overflow: auto;
+}
+
+div.mycodingprojects div{
+  width:30%;
+  float:left;
+}
+
+header{
+  background-color:#0d1b9b;
+  position:sticky;
+}
+
