@@ -1,15 +1,27 @@
+header{
+  background-color: blue;
+  position:fixed;
+  width:100%;
+  height: 70px;
+  top:0;
+  left:0;
+  right:0;
+  z-index:2;
+  transition: background-color 0.3s ease;
+}
+
+
 body{
   background-color: aliceblue;
   justify-content: center;
-  margin: 0;
-  padding:0;
+  padding-top:0;
   font-family:Arial, sans-serif;
   font-size: 120%;
   text-align:center;
 }
 
 a:link{  
-  color:rgb(255, 255, 255);
+  color:blue;
   background-color: transparent;
   text-decoration:none;
 } 
@@ -21,20 +33,21 @@ a:visited {
 }
 
 a:hover{
-  color:rgb(255, 255, 0);
-  background-color: transparent;
-  text-decoration:none;
+  color: yellow;
+  text-decoration:underline;
 }
 img{
   width:100%;
 }
 
 ul {
+  color:blue;
   list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+  margin-left:450px;
+  margin-top: 0px;
+  padding-top: 0;
   overflow: hidden;
-  background-color: #2547df;
+  background-color: transparent;
 }
 
 li {
@@ -43,19 +56,46 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: blue;
   text-align: center;
   padding: 25px;
   text-decoration:#37CBE6;
 }
 
 li a:hover {
-  background-color: #3E4FE6;
+  background-color: transparent;
 } 
 .mycondingprojects{
   display:"flex";
 }
-div.mycodingprojects{
+
+.myPhotoTxt{
+  background-image: url('myPhotos/my_photo.jpg');
+  padding-top:100px;
+  color:white;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  /* to ensure that this particular (div) element is fixed and other elements are scrolled at the top of it*/
+  top:50px;
+  left:0;
+  z-index:1;
+}
+
+.my_intro{
+  display: inline-block;
+  color:blue;
+  margin-left:10px;
+  margin-right:10px;
+  text-align: center;
+  margin-right:10%; /*this one determines the distance between my paragraphs*/
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+
+}
+
+.mycodingprojects{
   width:100%;
   overflow: auto;
 }
@@ -65,8 +105,27 @@ div.mycodingprojects div{
   float:left;
 }
 
-header{
-  background-color:#0d1b9b;
-  position:sticky;
+.myReseachProj{
+  display:flex;
 }
+
+div.myReseachProj{
+  width:100%;
+  overflow:auto;
+}
+
+div.myReseachProj div{
+  width:30%;
+  float:left;
+}
+
+.about{
+  background-color: transparent;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+
+
+
 
