@@ -1,13 +1,12 @@
 header{
-  background-color: blue;
+  background-color:rgb(7, 148, 101);
   position:fixed;
   width:100%;
-  height: 70px;
+  height: 60px;
   top:0;
   left:0;
   right:0;
   z-index:2;
-  transition: background-color 0.3s ease;
 }
 
 
@@ -41,9 +40,11 @@ img{
 }
 
 ul {
+  background-image: url(myPhotos\header_background.jpg;);
+  background-size: cover;
   color:blue;
-  list-style-type: none;
-  margin-left:450px;
+  list-style-type:none;
+  margin-left:420px;
   margin-top: 0px;
   padding-top: 0;
   overflow: hidden;
@@ -85,14 +86,59 @@ li a:hover {
 
 .my_intro{
   display: inline-block;
-  color:blue;
-  margin-left:10px;
+  color:rgb(2, 110, 51);
+  margin-left:20px;
   margin-right:10px;
   text-align: center;
   margin-right:10%; /*this one determines the distance between my paragraphs*/
   font-family:Georgia, 'Times New Roman', Times, serif;
-  
+}
 
+.changing{
+  opacity: 0;
+  position:absolute;
+  animation:both;
+  animation-duration: 1s;
+}
+
+@keyframes fe_dev {
+  0%, 100% { opacity: 0; }
+  25%, 50% { opacity: 1; }
+}
+
+@keyframes des1 {
+  0%, 33.3% { opacity: 0; }
+  16.65%, 49.95% { opacity: 1; }
+}
+
+@keyframes des2 {
+  0%, 50% { opacity: 0; }
+  33.3%, 66.6% { opacity: 1; }
+}
+
+@keyframes ai_entR {
+  0%, 66.6% { opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
+
+.changing.fe_dev{
+  animation-name: fe_dev;
+  animation-delay: 0s;
+}
+
+.changing.des1{
+  animation-name: des1;
+  animation-delay: 2s;
+}
+
+.changing.des2{
+  animation-name: des2;
+  animation-delay: 4s;
+}
+
+.changing.ai_entR{
+  animation-name: ai_entR;
+  animation-delay: 6s;
 }
 
 .mycodingprojects{
@@ -117,6 +163,9 @@ div.myReseachProj{
 div.myReseachProj div{
   width:30%;
   float:left;
+}
+span{
+  color:rgb(238, 255, 0);
 }
 
 .about{
