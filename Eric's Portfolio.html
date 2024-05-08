@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="my_Portfolio.css">
   </head>
 
-  <!--I am an aspiring full-stack developer/UI.UX designer/Social Media Manager/IT Researcher/Graphic Designer-->
-
   <body>
     <header>
+      <nav>
         <ul>
           <li><a href = "#Home" >Home</a></li>
           <li><a href = "#AboutMe">About</a></li>
@@ -20,35 +19,28 @@
           <li><a href = "#MyResume">My Resume</a></li>
           <li><a href = "#contactMe">Contact Me</a></li>
         </ul>
+      </nav>
     </header>
 
     <div class= "myPhotoTxt">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p class= "my_intro" style="font-size: 50px; margin-left: 200px;">
-        Hi there! <br> I am <br> Eric Hatungimana
-      </p>
+      <ul style="margin-top: 100px; margin-left: 290px;">
+        <li><p class= "my_intro" style="font-size: 50px; margin-left: 0px; text-align: center;">
+          Hi there! <br> I am <br> Eric Hatungimana
+        </li>
 
-      <p class= "my_intro" style="font-size: 50px;">
-        I am <br> a(n) <br> <span class = "changing">
+        <li><p style="color:rgb(44, 20, 3)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></li><!--Empty paragraph to create space between the two (needed) paragraphs-->
+        
+        <li><p class= "my_intro" style="font-size: 50px; text-align: left;">
+            I am a (an) <br><span class = "changing fe_dev">front-end <br>fevelopper</span><span class = "changing des1">UI/UX <br>designer</span><span class = "changing des2">graphic <br>designer</span><span class = "changing ai_entR">AI enthusiast & <br>Researcher</span></p>
+        </li>
+
+      </ul>
     </div>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<!-- try a different type of animation(maybe fading coming back)-->
-    <script> 
-      var typed = new Typed(".changing", {
-        strings : ["font-end developper", "graphic designer","AI entusiast", "font-end developper"],
-        typeSpeed: 150,
-        backSpeed: 150,
-        looped:true
-      })
-    </script>
+    
     
     <!-- ABOUT ME-->
-      <div class= "about" id="AboutMe">
+      <div class= "about" id="AboutMe"> <!--ID for links, class for CSS meodifications-->
         <h1 > About me </h1>
           <p>
             Raised up in one of Burundi, one of the world's least developped countries, ....technology...I am Eric Hatungimana. I am majoring in Computer Science and Information Systems at Ashesi University. I am passionate about coding and graphic design. I look forward to applying my knowledge and contributing to improving any company where I will find myself, either for an internship or a job. I am an excellent communicator and quick listener who is very receptive and open to feedback. I am a team worker, characterized by a high sense of inquisitiveness, and I possess high analytical skills. I am confident that my courage, determination, and spirit of teamwork will make me an outstanding worker in any position I occupy.
@@ -122,6 +114,7 @@
                 </button>
               </a>
             </li>
+
             <span>
               <li>
                 <p id = contactMe>
@@ -134,6 +127,8 @@
               </li>
             </ul>
             </span>
+
+  
 
   <script src="myJscrCode.js"></script>
   
